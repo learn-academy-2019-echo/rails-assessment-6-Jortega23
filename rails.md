@@ -5,7 +5,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 1. MVC (Model View Controller) is a pattern for the architecture of a software program. Give a brief description of each component and describe how Ruby on Rails handles MVC.
 
-  Your answer:
+  Your answer:Model is how the data table is structured, View is how Ruby on Rails displays the data, controller is where the data is controlled or given specific attritbutes before its pushed to view.
 
   Researched answer:
 
@@ -13,7 +13,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 2. Using the information given, fill in the blanks to complete the steps for creating a new view in a Rails application.
 
-  Step 1: Create the _________ in the file config/routes.rb
+  Step 1: Create the Route in the file config/routes.rb
   ```
   get '/about' => 'statics#about'
   ```
@@ -38,22 +38,30 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 /users/       method="GET"     # :controller => 'users', :action => 'index'
+this method gets its users by the index
 
 /users/1      method="GET"     # :controller => 'users', :action => 'show'
+this method will get the users controller and show the attributes or directly show all the users in the user 
 
 /users/new    method="GET"     # :controller => 'users', :action => 'new'
+this method gets the users controller and allows for new user to be created
 
 /users/       method="POST"    # :controller => 'users', :action => 'create'
+this method will post what ever new user thats created 
 
 /users/1/edit method="GET"     # :controller => 'users', :action => 'edit'
+this method allows to get a specific user from the users and edit them
 
 /users/1      method="PUT"     # :controller => 'users', :action => 'update'
+this method will update the users information or attributes
 
 /users/1      method="DELETE"  # :controller => 'users', :action => 'destroy'
+this message deletes a user from the users
 
 
 
 3b. Which of the above routes must always be passed params and why?
+
 
 
 
